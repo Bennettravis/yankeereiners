@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule | YRHA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand" aria-label="Yankee Reining Horse Association">
+          <img src="assets/logo-1.png" alt="YRHA logo" class="brand-logo" />
+          <span class="brand-text">Yankee Reining Horse Association</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="sponsors.html">Sponsors</a>
+          <a href="members.html">Members</a>
+          <a href="board.html">Board</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="social-links" aria-label="Social media links">
+          <a href="https://www.facebook.com/yankeereiners" target="_blank" rel="noreferrer" aria-label="Facebook">Facebook</a>
+        </div>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPFnOiqkP-DoOEEoHhEW9WnWeleWplbSbrL23Vqfxdky9NYQ/viewform" class="btn btn-primary nav-cta">Register now</a>
+      </div>
+
+      <div class="mobile-nav" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="members.html">Members</a>
+        <a href="board.html">Board</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </header>
+
+    <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const mobileNav = document.querySelector('.mobile-nav');
+
+      if (navToggle && mobileNav) {
+        navToggle.addEventListener('click', () => {
+          const isOpen = mobileNav.classList.toggle('is-open');
+          navToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+      }
+    </script>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-inner">
+          <p class="page-kicker">Event timeline</p>
+          <h1>Plan your weekend from arrival to awards.</h1>
+          <p>From check-in and schooling to finals and awards, here’s the flow of the event weekend.</p>
+        </div>
+      </section>
+
+      <section class="section page-content">
+        <div class="container">
+          <div class="page-panel" style="border: 1px solid rgba(73, 47, 34, 0.08); background: rgba(255,247,239,0.9);">
+            <p class="section-subhead">Updated</p>
+            <h3>Current event schedule</h3>
+            <p>The most up-to-date schedule is now listed on the <a href="events.html" class="text-link">Events page</a>.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section schedule-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow-dark">Event schedule</p>
+            <h2>Weekend at a glance.</h2>
+          </div>
+
+          <div class="schedule-list">
+            <div class="schedule-item">
+              <div class="day">Friday</div>
+              <div class="details">
+                <h3>Arrival + schooling</h3>
+                <p>Check-in opens at 9:00 AM • Warm-up arena access from 12:00 PM</p>
+              </div>
+            </div>
+
+            <div class="schedule-item">
+              <div class="day">Saturday</div>
+              <div class="details">
+                <h3>Open division competition</h3>
+                <p>Prelim rounds begin at 8:00 AM • Finals in the evening</p>
+              </div>
+            </div>
+
+            <div class="schedule-item">
+              <div class="day">Sunday</div>
+              <div class="details">
+                <h3>Youth + amateur finals</h3>
+                <p>Champion awards, vendor market, and sponsor appreciation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <img src="assets/logo.png" alt="Showplex logo" class="brand-logo" />
+            <span class="brand-text">YANKEE REINING ASSOCIATION</span>
+          </a>
+          <p>Celebrating precision, partnership, and performance in the reining arena.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="sponsors.html">Sponsors</a>
+          <a href="members.html">Members</a>
+          <a href="board.html">Board</a>
+        </div>
+
+        <div class="footer-socials">
+          <h3>Follow us</h3>
+          <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+        </div>
+
+        <div class="contact-box">
+          <h3>Contact</h3>
+          <p><strong>YRHA Membership</strong></p>
+          <a href="mailto:entries@showplexreining.com">entries@showplexreining.com</a>
+          <a href="tel:+15551234567">(555) 123-4567</a>
+          <p>2293 Thomas Road</p>
+          <p>Varysburg, NY 14167</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 YANKEE REINING ASSOCIATION</span>
+      </div>
+    </footer>
+  </body>
+</html>

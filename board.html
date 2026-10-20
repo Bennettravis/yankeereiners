@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Board | YRHA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand" aria-label="Yankee Reining Horse Association">
+          <img src="assets/logo-1.png" alt="YRHA logo" class="brand-logo" />
+          <span class="brand-text">Yankee Reining Horse Association</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="sponsors.html">Sponsors</a>
+          <a href="members.html">Members</a>
+          <a href="board.html">Board</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="social-links" aria-label="Social media links">
+          <a href="https://www.facebook.com/yankeereiners" target="_blank" rel="noreferrer" aria-label="Facebook">Facebook</a>
+        </div>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPFnOiqkP-DoOEEoHhEW9WnWeleWplbSbrL23Vqfxdky9NYQ/viewform" class="btn btn-primary nav-cta">Register now</a>
+      </div>
+
+      <div class="mobile-nav" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="members.html">Members</a>
+        <a href="board.html">Board</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </header>
+
+    <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const mobileNav = document.querySelector('.mobile-nav');
+
+      if (navToggle && mobileNav) {
+        navToggle.addEventListener('click', () => {
+          const isOpen = mobileNav.classList.toggle('is-open');
+          navToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+      }
+    </script>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-inner">
+          <p class="page-kicker">Leadership</p>
+          <h1>Guiding the association with experience and direction.</h1>
+          <p>YRHA leadership is focused on strong event execution, member support, and upholding the standards of reining competition.</p>
+        </div>
+      </section>
+
+      <section class="section page-content">
+        <div class="container page-grid">
+          <div class="page-panel">
+            <p class="section-subhead">Board focus</p>
+            <h3>Steady leadership for a growing sport.</h3>
+            <p>Our board members work to support riders, maintain event quality, and keep the association rooted in fairness and community.</p>
+            <ul class="feature-list">
+              <li>Event planning and execution</li>
+              <li>Membership support and communication</li>
+              <li>Competition standards and continuity</li>
+            </ul>
+          </div>
+
+          <div class="page-panel">
+            <p class="section-subhead">Leadership values</p>
+            <h3>Experience, accountability, and service.</h3>
+            <p>The board is committed to building a long-term culture of respect, professionalism, and participant-first competition.</p>
+            <div class="mini-stats">
+              <div class="mini-stat"><strong>8+</strong><span>Directors</span></div>
+              <div class="mini-stat"><strong>1</strong><span>Vision</span></div>
+              <div class="mini-stat"><strong>100%</strong><span>Commitment</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section board-section">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow eyebrow-dark">Leadership</p>
+            <h2>Board members.</h2>
+          </div>
+
+          <div class="board-layout">
+            <div class="cards-container">
+              <article class="card">
+                <img src="assets/woman placeholder.jpeg" alt="Courtney Craig" class="card-img" />
+                <h2 class="card-title">Courtney Craig</h2>
+                <p class="card-role">President</p>
+                <p class="card-contact"><a href="mailto:yrhacourtney@yahoo.com">yrhacourtney@yahoo.com</a></p>
+              </article>
+
+              <article class="card">
+                <img src="assets/man placeholder.jpeg" alt="Duke Dygert" class="card-img" />
+                <h2 class="card-title">Duke Dygert</h2>
+                <p class="card-role">Vice President</p>
+                <p class="card-contact"><a href="mailto:rddygert@gmail.com">rddygert@gmail.com</a></p>
+              </article>
+
+              <article class="card">
+                <img src="assets/woman placeholder.jpeg" alt="Heather Pye" class="card-img" />
+                <h2 class="card-title">Heather Pye</h2>
+                <p class="card-role">Treasurer</p>
+                <p class="card-contact">—</p>
+              </article>
+
+              <article class="card">
+                <img src="assets/woman placeholder.jpeg" alt="Kim Hixon" class="card-img" />
+                <h2 class="card-title">Kim Hixon</h2>
+                <p class="card-role">Secretary</p>
+                <p class="card-contact"><a href="mailto:Kimsands8@gmail.com">Kimsands8@gmail.com</a></p>
+              </article>
+            </div>
+
+            <div class="board-info">
+              <div class="board-list">
+                <div class="board-item">
+                  <span class="board-label">Past President</span>
+                  <strong>Kirby Dygert</strong>
+                </div>
+
+                <div class="board-item">
+                  <span class="board-label">Director</span>
+                  <strong>Scott Loomis</strong>
+                </div>
+
+                <div class="board-item">
+                  <span class="board-label">Director</span>
+                  <strong>Jerry Klein</strong>
+                </div>
+
+                <div class="board-item">
+                  <span class="board-label">Director</span>
+                  <strong>Sarah Judkiewicz</strong>
+                </div>
+
+                <div class="board-item">
+                  <span class="board-label">Director</span>
+                  <strong>Barb Dygert</strong>
+                </div>
+
+                <div class="board-item">
+                  <span class="board-label">Appointed Director</span>
+                  <strong>Kelly Hedges</strong>
+                </div>
+
+                <div class="board-item">
+                  <span class="board-label">Appointed Director</span>
+                  <strong>Meagan Kuhn</strong>
+                </div>
+
+                <div class="board-item">
+                  <span class="board-label">Point Keeper</span>
+                  <strong>Kim Hedges</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <img src="assets/logo.png" alt="Showplex logo" class="brand-logo" />
+            <span class="brand-text">YANKEE REINING ASSOCIATION</span>
+          </a>
+          <p>Celebrating precision, partnership, and performance in the reining arena.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="sponsors.html">Sponsors</a>
+          <a href="members.html">Members</a>
+          <a href="board.html">Board</a>
+        </div>
+
+        <div class="footer-socials">
+          <h3>Follow us</h3>
+          <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+        </div>
+
+        <div class="contact-box">
+          <h3>Contact</h3>
+          <p><strong>YRHA Membership</strong></p>
+          <a href="mailto:entries@showplexreining.com">entries@showplexreining.com</a>
+          <a href="tel:+15551234567">(555) 123-4567</a>
+          <p>2293 Thomas Road</p>
+          <p>Varysburg, NY 14167</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 YANKEE REINING ASSOCIATION</span>
+      </div>
+    </footer>
+  </body>
+</html>

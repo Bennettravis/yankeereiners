@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | YRHA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand" aria-label="Yankee Reining Horse Association">
+          <img src="assets/logo-1.png" alt="YRHA logo" class="brand-logo" />
+          <span class="brand-text">Yankee Reining Horse Association</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="sponsors.html">Sponsors</a>
+          <a href="members.html">Members</a>
+          <a href="board.html">Board</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="social-links" aria-label="Social media links">
+          <a href="https://www.facebook.com/yankeereiners" target="_blank" rel="noreferrer" aria-label="Facebook">Facebook</a>
+        </div>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPFnOiqkP-DoOEEoHhEW9WnWeleWplbSbrL23Vqfxdky9NYQ/viewform" class="btn btn-primary nav-cta">Register now</a>
+      </div>
+
+      <div class="mobile-nav" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="members.html">Members</a>
+        <a href="board.html">Board</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </header>
+
+    <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const mobileNav = document.querySelector('.mobile-nav');
+
+      if (navToggle && mobileNav) {
+        navToggle.addEventListener('click', () => {
+          const isOpen = mobileNav.classList.toggle('is-open');
+          navToggle.setAttribute('aria-expanded', String(isOpen));
+        });
+      }
+    </script>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-inner">
+          <p class="page-kicker">Registration</p>
+          <h1>Book your stall and secure your spot.</h1>
+          <p>Complete your registration for the upcoming YRHA event and join a competitive, high-quality weekend in the reining arena.</p>
+        </div>
+      </section>
+
+      <section class="section page-content">
+        <div class="container page-grid">
+          <div class="page-panel">
+            <p class="section-subhead">Step 1</p>
+            <h3>Complete the entry form.</h3>
+            <p>Submit your stall request or event information using the official registration form for the current show.</p>
+            <ul class="feature-list">
+              <li>Entry and stall information</li>
+              <li>Direct access to the official form</li>
+              <li>Fast turnaround for event confirmation</li>
+            </ul>
+          </div>
+
+          <div class="page-panel">
+            <p class="section-subhead">Step 2</p>
+            <h3>Prepare for the weekend.</h3>
+            <p>Once registered, you’ll be ready for arrival, schooling, classes, and competition day details.</p>
+            <div class="mini-stats">
+              <div class="mini-stat"><strong>1</strong><span>Form</span></div>
+              <div class="mini-stat"><strong>3</strong><span>Days</span></div>
+              <div class="mini-stat"><strong>100%</strong><span>Ready</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-panel">
+        <div class="container cta-box">
+          <div>
+            <p class="eyebrow eyebrow-dark">Entry registration</p>
+            <h2>Book your stall or request entry info.</h2>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPFnOiqkP-DoOEEoHhEW9WnWeleWplbSbrL23Vqfxdky9NYQ/viewform" class="btn btn-primary">Open registration form</a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <img src="assets/logo.png" alt="Showplex logo" class="brand-logo" />
+            <span class="brand-text">YANKEE REINING ASSOCIATION</span>
+          </a>
+          <p>Celebrating precision, partnership, and performance in the reining arena.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="sponsors.html">Sponsors</a>
+          <a href="members.html">Members</a>
+          <a href="board.html">Board</a>
+        </div>
+
+        <div class="footer-socials">
+          <h3>Follow us</h3>
+          <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+        </div>
+
+        <div class="contact-box">
+          <h3>Contact</h3>
+          <p><strong>YRHA Membership</strong></p>
+          <a href="mailto:entries@showplexreining.com">entries@showplexreining.com</a>
+          <a href="tel:+15551234567">(555) 123-4567</a>
+          <p>2293 Thomas Road</p>
+          <p>Varysburg, NY 14167</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 YANKEE REINING ASSOCIATION</span>
+      </div>
+    </footer>
+  </body>
+</html>
