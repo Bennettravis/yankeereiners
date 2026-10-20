@@ -846,6 +846,10 @@ ul {
   .cards-container {
     max-width: 100%;
   }
+
+  .card-img {
+    height: 260px;
+  }
 }
 
 @media (max-width: 760px) {
@@ -863,6 +867,14 @@ ul {
 
   .nav-toggle {
     display: flex;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card-img {
+    height: 200px;
   }
 
   .mobile-nav {
@@ -901,6 +913,14 @@ ul {
 
   .btn {
     width: 100%;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card-img {
+    height: 180px;
   }
 
   .hero-metrics {
