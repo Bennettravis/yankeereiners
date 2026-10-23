@@ -51,17 +51,7 @@
       </div>
     </header>
 
-    <script>
-      const navToggle = document.querySelector('.nav-toggle');
-      const mobileNav = document.querySelector('.mobile-nav');
-
-      if (navToggle && mobileNav) {
-        navToggle.addEventListener('click', () => {
-          const isOpen = mobileNav.classList.toggle('is-open');
-          navToggle.setAttribute('aria-expanded', String(isOpen));
-        });
-      }
-    </script>
+    <script src="script.js"></script>
 
     <main>
       <section class="page-hero">
