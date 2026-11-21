@@ -614,7 +614,10 @@ contact-box a:hover,
   .board-section .cards-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-}
+}@media (max-width: 858px) {
+.brand-text {
+display: none;
+} }
 
 @media (max-width: 760px) {
   .nav-wrap {
@@ -749,6 +752,13 @@ contact-box a:hover,
   .card-img {
     height: 210px;
   }
+
+  .mobile-nav .mobile-nav-register {
+    width: 100%;
+    margin-top: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+  }
 }
 
 /* Mobile navigation desktop fix */
@@ -835,6 +845,9 @@ contact-box a:hover,
   
   background: rgba(255, 255, 255, 0.76);
   box-shadow: 0 16px 32px rgba(33, 22, 17, 0.04);
+}
+.link-list {
+  padding: 1rem 1.2rem 1.2rem ;
 }
 /* test section */
 .mini-stat1,
@@ -1500,10 +1513,8 @@ contact-box a:hover,
 }
 
 .members-shell {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
-  gap: 1.5rem;
-  align-items: start;
+  display: flex;
+  align-items: center;
 }
 
 .members-grid {
@@ -1564,13 +1575,17 @@ contact-box a:hover,
 }
 
 .standings-panel {
+  max-width: 75%;
   min-width: 0;
-  padding: 1.2rem 1.15rem;
+  padding: 4rem 3rem;
   border: 1px solid rgba(73, 47, 34, 0.08);
   border-radius: 24px;
   background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(248,243,238,0.82));
   box-shadow: 0 16px 32px rgba(33, 22, 17, 0.04);
-  margin-top: 4rem;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 .standings-header {
@@ -1839,6 +1854,13 @@ contact-box a:hover,
 
   .card-img {
     height: 210px;
+  }
+
+  .mobile-nav .mobile-nav-register {
+    width: 100%;
+    margin-top: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    text-decoration: none;
   }
 }
 
